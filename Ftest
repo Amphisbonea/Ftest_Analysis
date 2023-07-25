@@ -1,0 +1,7 @@
+flight_data <- read.csv("C:/Users/Emre Kara/OneDrive - itu.edu.tr/Masaüstü/Emreproject/Final_ImageJ/Results/ReadyForAnalysis/FlightAnalysis.csv")
+B04 <- subset(flight_data, population=='B04')
+T01 <- subset(flight_data, population=='T01')
+N01 <- subset(flight_data, population=='N01')
+ZW184 <- subset(flight_data, population=='ZW184')
+
+var.test(B04$Landing_height_cm~N01$Landing_height_cm)
